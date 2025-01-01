@@ -131,15 +131,7 @@ header .header-news .carousel-text h3 {
   font-size: 22px;
   position: relative;
 }
-header .header-news .carousel-text h3::after {
-  content: "";
-  position: absolute;
-  height: 85px;
-  width: 5px;
-  background-color: #ff0000;
-  left: 40px;
-  top: -10px;
-}
+
 header .header-news .carousel-item img {
   max-height: 490px;
 }
