@@ -1,6 +1,5 @@
-const changeSlideView = (slide) => {
-  var swiper = new Swiper(".swiper", {
-    slidesPerView: slide,
+var swiper = new Swiper(".swiper", {
+    slidesPerView: 3,
     spaceBetween: 30,
     autoplay:true,
     loop:true,
@@ -9,8 +8,6 @@ const changeSlideView = (slide) => {
       clickable: true,
     },
   });
-}
-
 
   document.addEventListener('DOMContentLoaded', function () {
     const images = document.querySelectorAll('.slide-img img');
@@ -25,10 +22,10 @@ const mql = window.matchMedia("(max-width:992px)")
 
 const handlerOrientionChange = (e) => {
   if(mql.matches) {
-    changeSlideView(1);
+    console.log("1");
     
   }else{
-   changeSlideView(3);
+    console.log("10");
     
   }
 }
